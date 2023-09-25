@@ -49,11 +49,11 @@ impl User {
     }
 
     pub fn set_age(&mut self, new_age: u32) {
-        unimplemented!()
+        self.age = new_age
     }
 
     pub fn set_height(&mut self, new_height: f32) {
-        unimplemented!()
+        self.height = new_height
     }
 
     pub fn visit_doctor(&mut self, measurements: Measurements) -> HealthReport {
