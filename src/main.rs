@@ -23,23 +23,29 @@ pub struct HealthReport<'a> {
 
 impl User {
     pub fn new(name: String, age: u32, height: f32) -> Self {
-        unimplemented!()
+        User{
+            name,
+            age,
+            height,
+            visit_count: 0,
+            last_blood_pressure: None,
+        }
     }
 
     pub fn name(&self) -> &str {
-        unimplemented!()
+        self.name.into()
     }
 
     pub fn age(&self) -> u32 {
-        unimplemented!()
+        self.age
     }
 
     pub fn height(&self) -> f32 {
-        unimplemented!()
+        self.height
     }
 
     pub fn doctor_visits(&self) -> u32 {
-        unimplemented!()
+        self.visit_count.into()
     }
 
     pub fn set_age(&mut self, new_age: u32) {
